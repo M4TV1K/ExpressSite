@@ -1,0 +1,643 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: Tahoma, serif;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    line-height: 0.8vw;
+}
+
+#headerDiv {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4vw;
+    font-size: 0.9vw;
+    background-color: #00bfdc;
+    box-shadow: 0 3px 6px #4d4d4d;
+}
+
+#topHeader {
+    margin-top: 4vw;
+    background-image: url("../Images/MainBackground.png");
+    background-repeat: no-repeat;
+    background-size: 47%;
+}
+
+nav {
+    margin-left: 9%;
+    width: 27vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navButtons {
+    cursor: pointer;
+    font-size: 0.9vw;
+    outline: none;
+    border: none;
+    color: white;
+    background: transparent;
+}
+
+.navButtons:active {
+    color: #666666;
+}
+
+#extendButton {
+    display: none;
+}
+
+.orderButtons {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 0.8vw;
+    padding: 0.75vw 1.2vw;
+    background: #66428d;
+}
+.orderButtons:active {
+    color: #666666;
+    background-color: #3e2c79;
+}
+.upperOrder {
+    box-shadow: 3px 3px 6px #028397;
+}
+
+#asidePromotion {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+}
+
+#timeText {
+    margin-right: 9%;
+    color: #3e2c79;
+}
+
+#time {
+    margin-left: 1vw;
+}
+
+#headerArticle {
+    margin-left: 9%;
+    margin-right: 9%;
+    height: 38.8vw;
+    background-image: url("../Images/HeaderPeople.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 100% 100%;
+}
+
+#headerText {
+    padding-top: 5vw;
+    margin-bottom: 1vw;
+    color: white;
+    line-height: 5vw;
+    font-size: 3.5vw;
+}
+
+#thinText {
+    font-weight: normal;
+}
+
+.navigationalHolder {
+    width: 99.9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigationalTags {
+    color: #3e2c79;
+    font-size: 1.2vw;
+}
+
+.arrowImg {
+    margin-top: -0.5vw;
+    width: 2.2vw;
+}
+
+/*main part*/
+
+#specPromotionDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#singleProfessor {
+    height: 15vw;
+}
+.promotionText {
+    color: #3e2c79;
+    font-size: 0.9vw;
+}
+.belowOrder {
+    box-shadow: 3px 3px 6px #dbdbdb;
+    margin-top: 0.8vw;
+}
+#smallGroup {
+    height: 15vw;
+}
+#bigGroup {
+    margin-top: 3vw;
+    width: 100%;
+}
+#orderTen {
+    flex: 1 1 100%;
+}
+
+#subscriptionFee {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5vw;
+}
+#bigPlus {
+    font-size: 4.5vw;
+    margin-right: 1vw;
+    margin-bottom: 0.55vw;
+}
+#everyMonthFee {
+    font-size: 1.75vw;
+}
+
+#advantagesDiv {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#whyUsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#whyUsTag {
+    text-align: center;
+    margin-top: 4.5vw;
+    font-size: 1.9vw;
+}
+.whyUsText {
+    color: #3e2c79;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+}
+.whyUsHolders {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#designQuality {
+    margin-top: 1vw;
+    margin-left: 5%;
+}
+#medalImg {
+    height: 7.5vw;
+    margin-right: 10vw;
+}
+
+#simpleUsage {
+    margin-top: 5vw;
+    margin-right: 12%;
+}
+#teacherImg {
+    height: 10vw;
+    margin-left: 12%;
+}
+
+#bestPrice {
+    margin-top: 5vw;
+    margin-left: 5%;
+}
+#trolleyImg {
+    height: 9vw;
+    margin-right: 9%;
+}
+
+#performanceRate {
+    margin-top: 5vw;
+    margin-right: 6%;
+}
+#clockImg {
+    height: 7vw;
+    margin-left: 14%;
+}
+
+#orderPatternDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Images/FooterBackground.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 100% 100%;
+}
+
+#toOrderSiteText {
+    margin-top: 5vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+#patternHolders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.patternImages {
+    flex: 0 0 27%;
+    display: block;
+    width: 10vw;
+    padding: 1vw;
+    z-index: 2;
+}
+.patternImages:active {
+    opacity: 0.75;
+}
+.badPatterns {
+    z-index: 1;
+    margin-top: -10.06vw;
+}
+
+#orderFormDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5vw 10vw;
+    margin-top: 3vw;
+    margin-bottom: 8vw;
+
+    border: 0.35vw solid #66428d;
+    border-radius: 0.45vw;
+}
+
+.inputLabel {
+    text-align: center;
+    color: #3e2c79;
+    font-size: 0.9vw;
+}
+
+.inputBox {
+    font-family: Tahoma, serif;
+    border: 1px solid #3e2c79;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1vw;
+    margin-top: 0.2vw;
+    width: 17vw;
+    height: 0.7vw;
+    font-size: 0.9vw;
+    padding: 3%;
+}
+
+#submitOrder {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 0.8vw;
+    padding: 0.75vw 1.2vw;
+    background: #66428d;
+    box-shadow: 3px 3px 6px #666666;
+}
+
+#submitOrder:active {
+    color: #666666;
+    background-color: #3e2c79;
+}
+
+/*Resizing Website*/
+@media screen and (max-width: 1500px) {
+    #headerDiv {
+        height: 6vw;
+    }
+    #topHeader {
+        margin-top: 6vw;
+    }
+    #upperOrderButton {
+        margin-left: 1vw;
+    }
+    .orderButtons, #submitOrder {
+        font-size: 1.2vw;
+        padding: 0.75vw 1.2vw;
+    }
+    .navButtons {
+        font-size: 1.3vw;
+    }
+    #asidePromotion {
+        width: 40vw;
+    }
+    #timeText {
+        font-size: 1.21vw;
+    }
+    .navigationalTags {
+        font-size: 1.5vw;
+    }
+    .arrowImg {
+        width: 3vw;
+    }
+    .promotionText {
+        font-size: 1.3vw;
+    }
+    #whyUsTag {
+        font-size: 2.1vw;
+    }
+    #advantagesDiv {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .whyUsText {
+        font-size: 1.4vw;
+        line-height: 1.7vw;
+    }
+    #medalImg {
+        height: 9.5vw;
+    }
+    #teacherImg {
+        height: 11vw;
+    }
+    #trolleyImg {
+        height: 9vw;
+    }
+    #clockImg {
+        height: 8vw;
+        margin-left: 13%;
+    }
+    #toOrderSiteText {
+        font-size: 1.4vw;
+    }
+    .patternImages {
+        width: 13vw;
+    }
+    .badPatterns {
+        margin-top: -12.7vw;
+    }
+    #orderFormDiv {
+        padding: 1.75vw 14vw;
+    }
+    .inputLabel {
+        font-size: 1.3vw;
+    }
+    .inputBox {
+        width: 20vw;
+        height: 0.95vw;
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 890px){
+    #headerDiv {
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+        height: fit-content;
+    }
+    #asidePromotion {
+        margin-left: 10%;
+        flex: 0 0 55%;
+    }
+    #extendButton {
+        margin: 1vw 10% 1vw 0;
+        display: inline;
+        width: 4.5vw;
+        height: 4.5vw;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        background-image: url("../Images/ExtendButton.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #extendButton:active {
+        opacity: 0.5;
+    }
+    nav {
+        border-top: 2px dashed #028397;
+        margin: 0;
+        flex: 1 1 100%;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+    .navButtons {
+        font-size: 2vw;
+        margin-top: 1vw;
+    }
+    #mainButton {
+        margin-top: 2vw;
+    }
+    #timeText {
+        font-size: 1.6vw;
+    }
+    #upperOrderButton {
+        font-size: 2vw;
+        margin: 1vw 0 2vw;
+    }
+
+
+    #topHeader {
+        margin-top: 6.4vw;
+        background-size: 99%;
+        height: 35vw;
+    }
+    #headerArticle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        height: 27vw;
+        background-image: none;
+    }
+    #headerText {
+        text-align: center;
+        padding-top: 2vw;
+        font-size: 4vw;
+    }
+    .orderButtons, .navigationalTags, #submitOrder {
+        font-size: 1.8vw;
+    }
+    .arrowImg {
+        width: 3.9vw;
+    }
+
+    main {
+        margin-top: 2vw;
+    }
+
+    #specPromotionDiv, #advantagesDiv {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .promotionText {
+        font-size: 2vw;
+    }
+    #singleProfessor, #smallGroup {
+        height: 25vw;
+    }
+    #bigGroup {
+        margin-top: 3.5vw;
+    }
+    #bigPlus {
+        font-size: 8vw;
+        margin-right: 1.5vw;
+    }
+    #everyMonthFee {
+        font-size: 2vw;
+    }
+    #whyUsTag {
+        font-size: 2.5vw;
+    }
+    .whyUsText {
+        font-size: 1.75vw;
+        line-height: 2.1vw;
+    }
+    #medalImg, #trolleyImg {
+        height: 11vw;
+    }
+    #teacherImg {
+        height: 12vw;
+    }
+    #clockImg {
+        height: 9vw;
+        margin-left: 12%;
+    }
+    #orderPatternDiv {
+        background-size: 99%;
+    }
+    #toOrderSiteText {
+        font-size: 2vw;
+    }
+    .patternImages {
+        flex-basis: 50%;
+    }
+    .badPatterns {
+        margin-top: -23.5vw;
+    }
+    .inputBox {
+        width: 30vw;
+        height: 1vw;
+        font-size: 2vw;
+    }
+    .inputLabel {
+        font-size: 1.95vw;
+    }
+}
+
+@media screen and (max-width: 535px){
+    .navButtons {
+        font-size: 3.5vw;
+    }
+    #mainButton {
+        margin-top: 3vw;
+    }
+    #upperOrderButton {
+        font-size: 3.5vw;
+        margin: 1vw 0 3vw;
+    }
+    #asidePromotion {
+        flex: 0 0 46%;
+    }
+    #timeText {
+        font-size: 2.4vw;
+        text-align: center;
+    }
+    #extendButton {
+        margin: 2vw 10% 2vw 0;
+        width: 6.5vw;
+        height: 6.5vw;
+    }
+    #topHeader {
+        margin-top: 10.25vw;
+        height: 43vw;
+    }
+    #headerText {
+        font-size: 6vw;
+        line-height: 6.5vw;
+    }
+    .orderButtons, .navigationalTags, #submitOrder {
+        font-size: 2.4vw;
+    }
+    #headerOrderButton {
+        margin-top: 1vw;
+    }
+    #SpecialPromotionText {
+        margin-top: 7vw;
+    }
+    main {
+        margin-top: 3vw;
+    }
+    #specPromotionDiv, #advantagesDiv {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    #singleProfessor, #smallGroup {
+        height: 32vw;
+    }
+    .promotionText {
+        font-size: 2.6vw;
+    }
+    #bigPlus {
+        font-size: 12vw;
+        margin-right: 2.5vw;
+        margin-bottom: 1vw;
+    }
+    #everyMonthFee {
+        font-size: 2.75vw;
+    }
+    #whyUsTag {
+        font-size: 3.9vw;
+    }
+    .whyUsText {
+        font-size: 2.3vw;
+        line-height: 3.1vw;
+    }
+    #medalImg, #teacherImg, #trolleyImg {
+        height: 14vw;
+    }
+    #clockImg {
+        height: 11vw;
+        margin-left: 10%;
+    }
+    #toOrderSiteText {
+        font-size: 2.6vw;
+    }
+    .patternImages {
+        flex-basis: 70%;
+    }
+    .badPatterns {
+        margin-top: -32.5vw;
+    }
+    #orderFormDiv {
+        padding: 1vw 18vw;
+    }
+    .inputLabel {
+        font-size: 2.8vw;
+    }
+    .inputBox {
+        width: 35vw;
+        height: 2vw;
+        font-size: 3vw;
+    }
+}

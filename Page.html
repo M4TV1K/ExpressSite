@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Express сайт</title>
+    <link rel="stylesheet" href="Style/Style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Script/Script.js"></script>
+</head>
+<body>
+    <div id="headerDiv">
+        <nav>
+            <button id="mainButton" class="navButtons">ГОЛОВНА</button>
+            <button id="priceButton" class="navButtons">ЦІНА</button>
+            <button id="prosButton" class="navButtons">ПЕРЕВАГИ</button>
+            <button id="patternButton" class="navButtons">ШАБЛОНИ</button>
+            <button id="upperOrderButton" class="orderButtons upperOrder">ЗАМОВИТИ</button>
+        </nav>
+        <button id="extendButton"></button>
+        <aside id="asidePromotion">
+            <strong id="timeText">ДО КІНЦЯ АКЦІЇ ЗАЛИШИЛОСЬ <a id="time">11 ГОД : 22 ХВ : 63 СЕК</a></strong>
+        </aside>
+    </div>
+
+    <header id="topHeader">
+        <article id="headerArticle">
+            <h1 id="headerText">
+                ВЧИТЕЛЬСЬКИЙ<br>
+                ЕКСПРЕС САЙТ<br>
+                <a id="thinText">ЗА ОДНУ ДОБУ</a>
+            </h1>
+            <button id="headerOrderButton" class="orderButtons upperOrder">ЗАМОВИТИ</button>
+        </article>
+        <footer id="firstScrollPoint" class="navigationalHolder">
+            <a id="SpecialPromotionText" href="#firstScrollPoint">
+                <p class="navigationalTags"><strong>СПЕЦІАЛЬНА ПРОПОЗИЦІЯ</strong></p>
+                <img class="arrowImg" src="Images/ExtendArrow.png" alt="Навігаційна стрілка">
+            </a>
+        </footer>
+    </header>
+    <main>
+        <div id="specPromotionDiv">
+            <section id="orderOne">
+                <img id="singleProfessor" src="Images/Professor.png" alt="Фотографію з професором">
+                <p class="promotionText">
+                    ПРИ ЗАМОВЛЕННІ САЙТУ<br>
+                    ДЛЯ <strong>ОДНОГО</strong> ВЧИТЕЛЯ<br>
+                    ВАРТІСТЬ <strong>750 ГРН</strong>
+                </p>
+                <button class="orderButtons belowOrder">ЗАМОВИТИ</button>
+            </section>
+            <section id="orderFive">
+                <img id="smallGroup" src="Images/SmallGroup.png" alt="Фотографія з декільками вчителями">
+                <p class="promotionText">
+                    ПРИ ЗАМОВЛЕННІ САЙТІВ<br>
+                    ДЛЯ <strong>П’ЯТИ І БІЛЬШЕ</strong> ВЧИТЕЛІВ<br>
+                    ВАРТІСТЬ ОДНОГО САЙТУ <strong>450ГРН</strong>
+                </p>
+                <button class="orderButtons belowOrder">ЗАМОВИТИ</button>
+            </section>
+            <section id="orderTen">
+                <img id="bigGroup" src="Images/BigGroup.png" alt="Фотографія з багатьма вчителями">
+                <p class="promotionText">
+                    ПРИ ЗАМОВЛЕННІ САЙТІВ<br>
+                    ДЛЯ <strong>ДЕСЯТИ І БІЛЬШЕ</strong> ВЧИТЕЛІВ<br>
+                    ВАРТІСТЬ ОДНОГО САЙТУ <strong>300 ГРН</strong>
+                </p>
+                <button class="orderButtons belowOrder">ЗАМОВИТИ</button>
+            </section>
+            <section id="subscriptionFee">
+                <strong id="bigPlus" class="promotionText">+</strong>
+                <strong id="everyMonthFee" class="promotionText">
+                    ЩОМІСЯЧНА АБОНПЛАТА<br>
+                    ВСЬОГО 300 ГРН
+                </strong>
+            </section>
+        </div>
+
+        <div id="advantagesDiv">
+            <header id="secondScrollPoint" class="navigationalHolder">
+                <a href="#secondScrollPoint">
+                    <p class="navigationalTags"><strong>ПЕРЕВАГИ</strong></p>
+                    <img class="arrowImg" src="Images/ExtendArrow.png" alt="Навігаційна стрілка">
+                </a>
+            </header>
+            <div id="whyUsDiv">
+                <p id="whyUsTag" class="promotionText">ЧОМУ МИ?</p>
+                <section id="designQuality" class="whyUsHolders">
+                    <p class="whyUsText">
+                        <strong>ЯКІСТЬ ДИЗАЙНУ</strong><br>
+                        ЯКІСТЬ ТА ОРИГИНІЛЬНІСТЬ ДИЗАЙНУ<br>
+                        НАШИХ САЙТІВ ЗНАЧНО ВІДРІЗНЯЄТЬСЯ<br>
+                        ВІД САЙТІВ ІНШИХ СТУДІЙ ТА КОНСТРУКТОРІВ
+                    </p>
+                    <img id="medalImg" src="Images/Medal.png" alt="Медаль">
+                </section>
+                <section id="simpleUsage" class="whyUsHolders">
+                    <img id="teacherImg" src="Images/Teacher.png" alt="Вчитель">
+                    <p class="whyUsText">
+                        <strong>ПРОСТОТА ВИКОРИСТАННЯ</strong><br>
+                        ЗРУЧНІСТЬ ТА ПРОСТОТА У ВИКОРИСТАННІ
+                    </p>
+                </section>
+                <section id="bestPrice" class="whyUsHolders">
+                    <p class="whyUsText">
+                        <strong>АДЕКВАТНІ ЦІНИ</strong><br>
+                        ДЕШЕВИЗНА НАШИХ ЦІН, ПОРІВНЯНО<br>
+                        З ЦІНАМИ У ІНШИХ СТУДІЯХ
+                    </p>
+                    <img id="trolleyImg" src="Images/HappyPeople.png" alt="Щасливі Люди у возику">
+                </section>
+                <section id="performanceRate" class="whyUsHolders">
+                    <img id="clockImg" src="Images/Clock.png" alt="Годинник який показує 24">
+                    <p class="whyUsText">
+                        <strong>ШВИДКІСТЬ ВИКОНАННЯ</strong><br>
+                        ВСЬОГО ЗА ОДНУ ДОБУ<br>
+                        ВИ ОТРИМАЄТЕ СВІЙ СТИЛЬНИЙ ТА СУЧАСНИЙ САЙТ.<br>
+                        ТАК ШВИДКО НЕ РОБИТЬ НІХТО КРІМ НАС
+                    </p>
+                </section>
+            </div>
+        </div>
+
+
+        <div id="orderPatternDiv">
+            <header id="thirdScrollPoint" class="navigationalHolder">
+                <a href="#thirdScrollPoint">
+                    <p class="navigationalTags"><strong>ЗАМОВИТИ</strong></p>
+                    <img class="arrowImg" src="Images/ExtendArrow.png" alt="Навігаційна стрілка">
+                </a>
+            </header>
+            <p id="toOrderSiteText" class="promotionText">
+                ЩОБ ЗАМОВИТИ САЙТ, ОБЕРІТЬ ОДИН, АБО КІЛЬКА ШАБЛОНІВ,<br>
+                ЗАПОВНІТЬ І ВІДПРАВТЕ ФОРМУ
+            </p>
+            <section id="patternHolders">
+                <img class="patternImages badPatterns" src="Images/Pattern1.png" alt="1Перший шаблон для сайту">
+                <img class="patternImages" src="Images/Pattern2.png" alt="2Другий шаблон для сайту">
+                <img class="patternImages badPatterns" src="Images/Pattern3.png" alt="3Третій шаблон для сайту">
+                <img class="patternImages" src="Images/Pattern4.png" alt="4Четвертий шаблон для сайту">
+                <img class="patternImages badPatterns" src="Images/Pattern5.png" alt="5П'ятий шаблон для сайту">
+                <img class="patternImages" src="Images/Pattern6.png" alt="6Шостий шаблон для сайту">
+            </section>
+
+            <div id="orderFormDiv">
+                <form id="makeOrderForm">
+                    <label class="inputLabel" for="yourName">
+                        <strong>ІМ'Я</strong><br>
+                    </label>
+                    <input
+                            id="yourName"
+                            class="inputBox"
+                            type="text"
+                            maxlength="35"
+                            required
+                    ><br>
+                    <label class="inputLabel" for="phoneNumber">
+                        <strong>ТЕЛЕФОН</strong><br>
+                    </label>
+                    <input
+                            id="phoneNumber"
+                            class="inputBox"
+                            type="text"
+                            maxlength="13"
+                            required
+                    ><br>
+                    <label class="inputLabel" for="patternNumbers">
+                        <strong>НОМЕР/И ШАБЛОНУ/ІВ</strong><br>
+                    </label>
+                    <input
+                            id="patternNumbers"
+                            class="inputBox"
+                            type="text"
+                            required
+                    ><br>
+                    <input
+                            id="submitOrder"
+                            class="belowOrder"
+                            type="submit"
+                            value="ЗАМОВИТИ"
+                    >
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+</html>
