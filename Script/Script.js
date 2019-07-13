@@ -11,6 +11,7 @@ window.onload = () => {
     });
     $('#priceButton').click(() => {
         window.location.href = '#firstScrollPoint';
+        if (window.innerWidth > 890) window.scrollBy(0, -15);
         hideNavButtons();
     });
     $('#prosButton').click(() => {
