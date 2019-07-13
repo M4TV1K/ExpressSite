@@ -22,7 +22,7 @@ window.onload = () => {
         hideNavButtons();
     });
     $('.orderButtons').click(() => {
-        window.location.href = '#toOrderSiteText';
+        window.location.href = '#thirdScrollPoint';
         hideNavButtons();
     });
 
@@ -38,7 +38,6 @@ window.onload = () => {
                 return false;
             }
         }
-
     });
 
     firstPoint = $('#firstScrollPoint')[0];
@@ -69,6 +68,7 @@ window.onload = () => {
         }
     });
 
+    startTimer($('#hours')[0], $('#minutes')[0], $('#seconds')[0]);
     resizeWindow();
     scrollWindow();
 };

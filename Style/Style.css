@@ -66,6 +66,7 @@ nav {
     color: white;
     outline: none;
     border: none;
+    border-radius: 7px;
     font-size: 0.8vw;
     padding: 0.75vw 1.2vw;
     background: #66428d;
@@ -275,10 +276,6 @@ nav {
 .patternImages:active {
     opacity: 0.75;
 }
-.badPatterns {
-    z-index: 1;
-    margin-top: -10.06vw;
-}
 
 #orderFormDiv {
     display: flex;
@@ -318,6 +315,7 @@ nav {
     color: white;
     outline: none;
     border: none;
+    border-radius: 7px;
     font-size: 0.8vw;
     padding: 0.75vw 1.2vw;
     background: #66428d;
@@ -391,9 +389,6 @@ nav {
     }
     .patternImages {
         width: 13vw;
-    }
-    .badPatterns {
-        margin-top: -12.7vw;
     }
     #orderFormDiv {
         padding: 1.75vw 14vw;
@@ -532,9 +527,6 @@ nav {
     .patternImages {
         flex-basis: 50%;
     }
-    .badPatterns {
-        margin-top: -23.5vw;
-    }
     .inputBox {
         width: 30vw;
         height: 1vw;
@@ -570,20 +562,26 @@ nav {
     }
     #topHeader {
         margin-top: 10.25vw;
-        height: 43vw;
+        height: 45vw;
     }
     #headerText {
         font-size: 6vw;
         line-height: 6.5vw;
     }
     .orderButtons, .navigationalTags, #submitOrder {
-        font-size: 2.4vw;
+        font-size: 2.8vw;
+    }
+    .arrowImg {
+        width: 4.5vw;
+    }
+    #headerArticle {
+        height: fit-content;
     }
     #headerOrderButton {
-        margin-top: 1vw;
+        margin-top: 2vw;
     }
-    #SpecialPromotionText {
-        margin-top: 7vw;
+    #firstScrollPoint {
+        margin-top: 1vw;
     }
     main {
         margin-top: 3vw;
@@ -626,11 +624,8 @@ nav {
     .patternImages {
         flex-basis: 70%;
     }
-    .badPatterns {
-        margin-top: -32.5vw;
-    }
     #orderFormDiv {
-        padding: 1vw 18vw;
+        padding: 2vw 18vw;
     }
     .inputLabel {
         font-size: 2.8vw;

@@ -6,6 +6,7 @@
     <title>Express сайт</title>
     <link rel="stylesheet" href="Style/Style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Script/Timer.js"></script>
     <script src="Script/Script.js"></script>
 </head>
 <body>
@@ -19,7 +20,11 @@
         </nav>
         <button id="extendButton"></button>
         <aside id="asidePromotion">
-            <strong id="timeText">ДО КІНЦЯ АКЦІЇ ЗАЛИШИЛОСЬ <a id="time">11 ГОД : 22 ХВ : 63 СЕК</a></strong>
+            <strong id="timeText">ДО КІНЦЯ АКЦІЇ ЗАЛИШИЛОСЬ
+                <a id="time">
+                    <a id="hours">1</a> ГОД : <a id="minutes">1</a> ХВ : <a id="seconds">10</a> СЕК
+                </a>
+            </strong>
         </aside>
     </div>
 
@@ -135,11 +140,11 @@
                 ЗАПОВНІТЬ І ВІДПРАВТЕ ФОРМУ
             </p>
             <section id="patternHolders">
-                <img class="patternImages badPatterns" src="Images/Pattern1.png" alt="1Перший шаблон для сайту">
+                <img class="patternImages" src="Images/Pattern1.png" alt="1Перший шаблон для сайту">
                 <img class="patternImages" src="Images/Pattern2.png" alt="2Другий шаблон для сайту">
-                <img class="patternImages badPatterns" src="Images/Pattern3.png" alt="3Третій шаблон для сайту">
+                <img class="patternImages" src="Images/Pattern3.png" alt="3Третій шаблон для сайту">
                 <img class="patternImages" src="Images/Pattern4.png" alt="4Четвертий шаблон для сайту">
-                <img class="patternImages badPatterns" src="Images/Pattern5.png" alt="5П'ятий шаблон для сайту">
+                <img class="patternImages" src="Images/Pattern5.png" alt="5П'ятий шаблон для сайту">
                 <img class="patternImages" src="Images/Pattern6.png" alt="6Шостий шаблон для сайту">
             </section>
 
@@ -183,8 +188,6 @@
                 </form>
             </div>
         </div>
-
-
     </main>
 </body>
 </html>
